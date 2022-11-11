@@ -1,23 +1,32 @@
 /* navigation */
-.inline-block {
+.inline-block li {
     display: inline-block;
     vertical-align: top;
 }
 
 .logo {
-    width: 23%;
+    width: 10%;
     padding: 1%;
     text-align: center;
 }
 
+.logo img {
+    max-width: 100px;
+}
+
 nav {
-    width: 73%;
+    width: 94%;
     padding: 1%;
+    margin-left: 8%;
+}
+
+nav li {
+    padding: 25px;
 }
 
 ul {
     width: 50%;
-    margin-left: auto;
+    padding: 0 35%;
 }
 
 /* hero image  */
@@ -34,12 +43,12 @@ ul {
 /* footer */
 footer {
     background-color: #373738;
-    padding-left: 50%;
     color: white;
 }
 
-footer ul {
+footer li {
     display: inline-block;
     vertical-align: top;
-    padding: ;
+    padding: 25px;
+    margin-left: 7%;
 }
