@@ -34,7 +34,8 @@ ul {
 /* footer */
 footer {
     background-color: #373738;
-    padding: ;
+    padding-left: 50%;
+    color: white;
 }
 
 footer ul {
