@@ -52,3 +52,34 @@ footer li {
     padding: 25px;
     margin-left: 7%;
 }
+
+.mySkills h1 {
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexContainer div {
+    width: 33%;
+    padding:6%;
+}
+
+.myWork {
+    text-align: center;
+}
+
+.myWork h1 {
+    padding: 5%;
+}
+
+.workGrid {
+display: grid;
+grid-template-rows: 50% 50%;
+grid-template-columns: 50% 50%;
+/* grid-template-areas:
+"pic1 project1"
+"project2 pic2"; */
+}
