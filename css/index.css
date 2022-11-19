@@ -15,9 +15,8 @@
 }
 
 nav {
-    width: 94%;
-    padding: 1%;
-    margin-left: 9%;
+    display: flex;
+    text-align: center;
 }
 
 nav li {
@@ -27,6 +26,7 @@ nav li {
 ul {
     width: 50%;
     padding: 0 35%;
+    text-align: center;
 }
 
 /* hero image  */
@@ -44,6 +44,7 @@ ul {
 footer {
     background-color: #373738;
     color: white;
+    display: flex;
 }
 
 footer li {
@@ -77,9 +78,31 @@ footer li {
 
 .workGrid {
 display: grid;
-grid-template-rows: 50% 50%;
-grid-template-columns: 50% 50%;
-/* grid-template-areas:
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+grid-template-areas:
 "pic1 project1"
-"project2 pic2"; */
+"project2 pic2";
+}
+
+#pic1 {
+    padding-bottom: 15%;
+}
+
+#pic2 {
+    padding-bottom: 15%;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .workGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "pic1"
+    "project1"
+    "project2"
+    ;
+    }
 }
